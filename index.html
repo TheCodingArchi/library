@@ -10,12 +10,16 @@
     <title>Library</title>
 </head>
 <body>
+    <!-- Logo and github link -->
     <header>
         <h1>Library</h1>
         <a href="https://github.com/TheCodingArchi/library" target="_blank" class="github">
             <i class="fab fa-github fa-2x"></i>
         </a>
     </header>
+    <!-- Logo and github link ^ -->
+
+    <!-- Search box and a new book button -->
     <section>
         <form action="">
             <button type="submit"><i class="fas fa-search"></i></button>
@@ -27,8 +31,34 @@
             <p>Add a new book</p>
         </button>
     </section>
+    <!-- Search box and a new book button ^ -->
+
+    <!-- Display area for books -->
     <main>
         <div class="main-container"></div>
     </main>
+    <!-- Display area for books ^ -->
+
+    <!-- Pop up form for adding a new book -->
+    <div>
+        <div>
+            <p>Add a new book</p>
+            <span class="close-button">x</span>
+        </div>
+        <form action="">
+            <label for="">Book Title:</label><br>
+            <input type="text" placeholder="Enter book title"><br>
+            <label for="">Author:</label><br>
+            <input type="text" placeholder="Enter Author's name"><br>
+            <label for="">No. of Pages:</label><br>
+            <input type="number" placeholder="Enter number of book pages"><br>
+            <span>Have you read the book?</span>
+            <label for="">Yes</label>
+            <input type="radio" name="read-or-not" value="yes">
+            <label for="">No</label>
+            <input type="radio" name="read-or-not" value="no"><br>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
 </body>
 </html>
